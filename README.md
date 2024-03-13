@@ -1,5 +1,5 @@
 # portfolio
-Manual tester portfolio
+
 Witaj na moim profilu GitHub! Jestem profesjonalnym testerem oprogramowania z bogatym doświadczeniem w pracy nad różnorodnymi projektami, w tym programami ćwiczeniowymi, symulatorami oraz aplikacjami chemicznymi. Pasjonuje mnie zapewnianie wysokiej jakości oprogramowania poprzez dokładne testowanie i ciągłe doskonalenie procesów QA.
 
 ## Moje Doświadczenie
