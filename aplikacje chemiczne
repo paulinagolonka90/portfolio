@@ -1,0 +1,88 @@
+
+Aplicativ
+
+APLIKACJE CHEMICZNE
+2 marca 2023 r. 
+
+
+PLAN TESTÓW
+Autor: Paulina Golonka
+Wersja dokumentu. 1.1
+Temat: APLIKACJE CHEMICZNE
+Aktualizacja: 02.03.2024
+
+Aplikacja. Nazwa i link:
+Cele testowania:
+Czy interfejs jest intuicyjny
+Czy jestem w stanie przejść poprawnie przez zadanie w poleceniu 
+Czy wykonywanie czynności spoza polecenia nie powoduje błędów
+
+APLIKACJE CHEMICZNE nie mają standardowego menu po lewej stronie oraz menu dolnego, tak jak to mają programy ćwiczeniowe i symulatory. W większości składają się z trybu TUTORIAL, NAUCZ SIĘ i SPRAWDŹ SIĘ lub poziomów. 
+Są projektowane customowo.
+UWAGI, które ORE wraca najczęściej to:
+literówki (w szczególności O to 0)
+indeksy górne/ dolne
+poprawność grafik (np. literka T nad strzałką)
+program nie jest w pełni dostępny z poziomu klawiatury (tutaj musimy spisywać skróty klawiaturowe, które używamy do nawigacji w danym programie), prawdopodobnie uwaga do nas wraca, ponieważ skróty są niejasne dla ORE
+brak tooltipów (po najechaniu myszką na przyciski/ikonki pojawia się tekst wyjaśniający, do czego służy to miejsce
+UWAGI do przeprowadzania testów w aplikacjach chemicznych:
+
+UWAGA!!! TESTY WYKONYWANE SĄ NA RÓŻNYCH PRZEGLĄDARKACH!
+Aplikacje testujemy zgodnie z zapisami w scenariuszu, mockupem oraz innymi stworzonymi plikami pomocniczymi
+Sprawdzamy poprawność wyświetlanych grafik zgodnie z uwagami w scenariuszu ( np. literka T nad strzałką itp. ) 
+Jak się wyświetla program na różnych ekranach, czy na małym ekranie wszystko jest dobrze widoczne np. przycisk Sprawdź.
+Należy sprawdzić widoczność przycisków na małym ekranie również w wersji fullscreen, ponieważ zdarza się, że wtedy ucina content i znika przycisk Sprawdź.
+Sprawdzamy poprawność walidacji we wszystkich zadaniach oraz trybach : poprawną wersję odpowiedzi oraz negatywną ( jakie dostajemy feedbacki, czy są poprawnie zaimplementowane), czy mamy warning (poniżej wytłumaczenie)
+sprawdzamy wygląd programu 1:1 na podstawie mockupu przygotowanego przez projektanta ux;
+sprawdzamy, czy w programie są trzy rodzaje informacji zwrotnych (feedbacków):
+informacja zwrotna pozytywna (sucess) - poprawny rozwiązanie ćwiczenia
+informacja zwrotna negatywna (error) - niepoprawne rozwiązanie ćwiczenia
+informacja zwrotna typu warning, która ma wyświetlać się dla dwóch przypadków: 
+- kiedy użytkownik nic nie wybrał (nie udzielił żadnej odpowiedzi, nie podszedł do rozwiązania zadania); 
+- kiedy użytkownik rozwiązał zadanie częściowo; 
+czy są informacje zwrotne, gdy dany element nie może być zastosowany
+sprawdzamy poprawność elementów w menu - czy biblioteka elementów jest poprawnie zaimplementowana. Czy dane nie są pomieszane
+Zwracamy uwagę na literówki w tekstach; 
+czy mamy przyciski umożliwiające przybliżanie i oddalanie grafiki
+czy daliśmy możliwość obracania obiektów z możliwością obejrzenia ich z każdej strony (jeżeli model 3D)
+czy jest instrukcja lub polecenia do programu 
+Sprawdzamy poprawność działania radio buttonów oraz checkboxów.
+Radiobutton - to jednokrotny wybór i nie może się odznaczać (tutaj można podejrzeć jak ma działać: https://mui.com/material-ui/react-radio-button/)
+Checkbox - to wielokrotny wybór (jego działanie: https://mui.com/material-ui/react-checkbox/)
+przycisk z poleceniem dla ucznia ma się nazywać POLECENIE, a instrukcja użytkowania programu ma być pod nazwą INSTRUKCJA
+INSTRUKCJA musi zawierać poprawny tytuł dla programu, sprawdzamy czy są dodane tootlipy do przycisków
+tooltip dla trybu pełnoekranowego powinien działać w obie strony tzn. jeśli chce włączyć ten tryb i jeśli chce go wyłączyć (https://docs.google.com/document/d/1PndfJNPty9QODggh6Nn-rBpq4Ew-st9R44JodcM4Zl4/edit)
+po wprowadzeniu zmian do kodu przez developera,  wykonujemy testy potwierdzające i regresji.
+sprawdzamy kontrast zgodnie z WCAG (np. https://contrast-ratio.com/ ) po wklejenu kodu hex oczekujemy wskaźnika z zielonym tłem więcej info https://www.ore.edu.pl/wp-content/uploads/2020/09/standardy-przygotowywania-tresci-zgodnie-z-wytycznymi-wcag-2.1_ore_2020.pdf
+sprawdzamy dostępność z poziomu klawiatury (zasady WCAG):
+a) focus - jeśli poruszamy się za pomocą klawiatury, aktualny element na którym jesteśmy ma się podświetlać + podkreślenie
+b) poruszanie się po programie za pomocą przycisków:
+· Tab - poruszanie się do przodu po elementach
+· Shift + Tab - poruszanie się do tyłu po elementach
+· Spacja - podnoszenie i upuszczanie elementów
+· Escape - anulowanie przeciągania
+· Strzałki - przenoszenie elementów do sąsiadujących stref upuszczania
+czy walidacja i pozostałe funkcjonalności działają tak samo w domyślnym trybie widoku na c+, jak i w trybie pełnoekranowym (po wciśnięciu przycisku fullscreen)
+
+
+info dla dev: linkowanie do innych miejsc w aplikacji lub innych aplikacji w e-podręczniki musi spełniać zasady WCAG. Staramy się korzystać ze znacznika <a href=””>. Jeśli nie mamy takiej możliwości używamy buttona ze stylami linku (niebieski kolor, podkreślenie). Zawsze sprawdzamy dostępność z poziomu klawiatury. 
+iikona Instrukcji import InfoIcon from '@mui/icons-material/Info';
+sprawdzamy kontrast pomiędzy tłem a tekstem. Narzędzie do sprawdzania kontrastu: https://contrast-ratio.com/ . Po wklejenu kodu hex oczekujemy wskaźnika z zielonym tłem
+
+Tryby na tabsach (chyba, że mockup mówi inaczej):
+
+
+
+Jeżeli jest układ okresowy 
+musi mieć legendę zgodnie z oznaczeniami na układzie oraz przykładowo opisaną komórkę z ukł. okresowego. Koniecznie trzeba sprawdzić, czy oznaczenia są zgodne ze scenariuszem, czasami ulegają one zmianie w poszczególnych aplikacjach
+
+
+
+
+info dla dev: Poprawne wyświetlanie Select Material UI w trybie fullscreen na C+(MenuProps): 
+ 
+
+
+
+
+
