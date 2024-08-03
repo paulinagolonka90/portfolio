@@ -1,0 +1,24 @@
+## Testy aplikacji dla pracowników call center
+
+### Opis projektu
+Brałam udział w testowaniu aplikacji przeznaczonej dla pracowników call center. Aplikacja wykorzystywała bibliotekę AG Grid do efektywnego zarządzania i wyświetlania danych.
+
+### Zakres prac
+- Przeprowadzanie testów funkcjonalnych interfejsu użytkownika
+- Weryfikacja poprawności działania komponentów AG Grid
+- Testowanie responsywności i wydajności aplikacji
+- Raportowanie błędów i współpraca z zespołem deweloperskim
+
+### Wykorzystane technologie i narzędzia
+- AG Grid
+- Narzędzie do śledzenia błędów,  Jira
+- Przeglądarka i narzędzia deweloperskie
+
+### Kluczowe osiągnięcia
+- Wykrycie i raportowanie krytycznych błędów, które zostały naprawione przed wdrożeniem
+- Optymalizacja wydajności wyświetlania dużych zbiorów danych w AG Grid
+
+### Zdobyte umiejętności
+- Pogłębiona znajomość biblioteki AG Grid i jej funkcjonalności
+- Doświadczenie w testowaniu aplikacji dla sektora call center
+- Umiejętność efektywnej komunikacji z zespołem deweloperskim i interesariuszami projektu
