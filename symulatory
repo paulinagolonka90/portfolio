@@ -1,29 +1,3 @@
 Aplicativ
 
 SYMULATORY
-1 lipca 2023
-
-
-PLAN TESTÓW
-Autor: Paulina Golonka
-Wersja dokumentu. 1.1
-Temat: SYMULATORY
-Data: 1.07.2023
-
-Aplikacja. Nazwa i link:
-Symulacje interaktywne (symulatory) z I, II, III i IV etapu wdrożenia 
-Cele testowania:
-Drukowanie listy kroków
-Symulacja procesu 
-Określenie prawidłowości lub nieprawidłowości 
-Głos lektora
-Czy jest linkowanie do innych składowych e-zasobu (informacje zwrotne negatywne)
-Czy interfejs jest intuicyjny
-czy jest możliwość uzyskania i interpretacji wyników
-czy istnieje baza danych ze wszystkimi wymienionymi elementami w standardzie 
-
-SYMULATORY nie mają standardowego menu po lewej stronie oraz menu dolnego!!!
-Są projektowane customowo.
-Zawierają informacje zwrotne (w których jest też pdf z listą kroków)
-Symulator powinien/może zawierać instrukcję obsługi, więc trzeba dopytywać, prosić o redakcję odpowiedniego tekstu - tutaj musi być on customowy, indywidulany 
-Symulator może zawierać Bazę wiedzy 
